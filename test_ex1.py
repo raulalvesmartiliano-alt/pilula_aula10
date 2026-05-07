@@ -1,0 +1,11 @@
+from ex_1 import acao_semaforo
+
+def teste_cor_vermelho():
+    assert acao_semaforo('vermelho') == 'Pare'
+def teste_cor_amarelo():
+    assert acao_semaforo('amarelo') == 'Atenção'
+def teste_cor_verde():
+    assert acao_semaforo('verde') == 'Siga'
+def test_cor_errada():
+    assert acao_semaforo('rosa') == 'Cor inválida'
+    
